@@ -1,19 +1,19 @@
-Несоответствие страницы заданному дизайну. В payment details есть лишнее поле Billing address.
-Блок Platinum не отзывается при нажатии Subscribe.
-Для выхода из окна Payment details серая зона реагирует только слева. Правая сторона не реагирует на закрытие.
-Длинна поля Your name всего 17 символов, что недостаточно для ввода first and last name.
-Длинна поля Billing address неограничена. Можно ввести любой текст любого размера что несет потенциальную опасность для баз данных.
-Орфографическая ошибка MOST POPULR.
-При внесении данных в Payment details, данные сохраняются и переносятся на другие предложения без использования функции Remember.
-Не работает функция Remember после нажатия [Pay] и возврата в Payment details. Данные не сохраняются.
-В предложении Bronze после заполнения Payment details и нажатия [Pay] пользователь получает сообщение “striped user detected” что для обычного юзера не является информативным.
-В предложении Bronze после внесения некорректного card number в Payment details и нажатия [Pay] пользователь получает аналогичное пункту 10 не информативное сообщение “striped user detected”.
-Поле ”card number” в предложении Bronze может принимать буквы вместо цифр.
-Во всех предложениях поле YY принимает год до 2019. Отсутствует проверка года при внесении данных.
-Отсутствует шифрование данных при передачи банковских данных на стороне клиента. JSON содержит незашифрованные банковские данные клиента.
-Поле Billing address необязательно для заполнения, хотя все остальные поля обязательны для заполнения.
-Страница не открывается в IE версия 10.0.32. 
-После внесения данных карты с закрытым счетом в Payment details и нажатия [Pay] в предложении Silver пользователь получает невалидное сообщение “Charge succeeds and funds will be added directly to your available balance (bypassing your pending balance)”/ “Charge succeeds and domestic pricing is used (other test cards use international pricing). / This card is only significant in countries with split pricing.” / “Charge is declined with an incorrect_cvc code” / “Results in a charge with a risk level of highest”. / “The charge is blocked as it's considered fraudulent” / “Charge is declined with a processing_error code”. Ожидается что сообщение будет понятно обычному пользователю.
+1. Несоответствие страницы заданному дизайну. В payment details есть лишнее поле Billing address.
+2. Блок Platinum не отзывается при нажатии Subscribe.
+3. Для выхода из окна Payment details серая зона реагирует только слева. Правая сторона не реагирует на закрытие.
+4. Длинна поля Your name всего 17 символов, что недостаточно для ввода first and last name.
+5. Длинна поля Billing address неограничена. Можно ввести любой текст любого размера что несет потенциальную опасность для баз данных.
+6. Орфографическая ошибка MOST POPULR.
+7. При внесении данных в Payment details, данные сохраняются и переносятся на другие предложения без использования функции Remember.
+8. Не работает функция Remember после нажатия [Pay] и возврата в Payment details. Данные не сохраняются.
+9. В предложении Bronze после заполнения Payment details и нажатия [Pay] пользователь получает сообщение “striped user detected” что для обычного юзера не является информативным.
+10. В предложении Bronze после внесения некорректного card number в Payment details и нажатия [Pay] пользователь получает аналогичное пункту 10 не информативное сообщение “striped user detected”.
+11. Поле ”card number” в предложении Bronze может принимать буквы вместо цифр.
+12. Во всех предложениях поле YY принимает год до 2019. Отсутствует проверка года при внесении данных.
+13. Отсутствует шифрование данных при передачи банковских данных на стороне клиента. JSON содержит незашифрованные банковские данные клиента.
+14. Поле Billing address необязательно для заполнения, хотя все остальные поля обязательны для заполнения.
+15. Страница не открывается в IE версия 10.0.32. 
+16. После внесения данных карты с закрытым счетом в Payment details и нажатия [Pay] в предложении Silver пользователь получает невалидное сообщение “Charge succeeds and funds will be added directly to your available balance (bypassing your pending balance)”/ “Charge succeeds and domestic pricing is used (other test cards use international pricing). / This card is only significant in countries with split pricing.” / “Charge is declined with an incorrect_cvc code” / “Results in a charge with a risk level of highest”. / “The charge is blocked as it's considered fraudulent” / “Charge is declined with a processing_error code”. Ожидается что сообщение будет понятно обычному пользователю.
 
 Привожу bug report на пункте 15, как пример:
 Summary: the unclear message at the end of buying the offer.
